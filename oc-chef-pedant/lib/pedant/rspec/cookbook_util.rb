@@ -341,11 +341,11 @@ module Pedant
         {
           "name" => "#{name}-#{version}",
           "cookbook_name" => name,
-            "version" => version,
-            "json_class" => "Chef::CookbookVersion",
-            "chef_type" => "cookbook_version",
-            "recipes" => opts[:recipes] || [],
-            "metadata" => {
+          "version" => version,
+          "json_class" => "Chef::CookbookVersion",
+          "chef_type" => "cookbook_version",
+          "recipes" => opts[:recipes] || [],
+          "metadata" => {
             "name" => name,
             "description" => opts[:description] || default_description,
             "long_description" => opts[:long_description] || default_long_description,
@@ -354,13 +354,8 @@ module Pedant
             "license" => opts[:license] || default_license,
             "platforms" => {},
             "dependencies" => {},
-            "recommendations" => {},
-            "suggestions" => {},
-            "conflicting" => {},
             "providing" => {},
-            "replacing" => {},
             "attributes" => {},
-            "groupings" => {},
             "recipes" => opts[:meta_recipes] || {},
             "version" => version
           },
